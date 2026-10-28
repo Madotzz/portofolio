@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Rahmat Rahmadi | Portofolio Web Developer</title>
+    <meta
+      name="description"
+      content="Portofolio pribadi Rahmat Rahmadi, mahasiswa yang membangun situs web responsif."
+    />
+
+    <!-- ASET IKON: assets/img/ikon/favicon.svg -->
+    <link rel="icon" href="assets/img/ikon/icon.png" type="image/svg+xml" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ASET CSS: assets/css/style.css -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <a href="#proyek" class="skip-link">Lewati ke konten</a>
+
+    <!-- =====================================================
+      BAGIAN 1: NAVBAR (dengan menu burger)
+      ===================================================== -->
+    <header class="navbar">
+      <nav class="container navbar__bar" aria-label="Navigasi utama">
+        <a href="#beranda" class="navbar__logo">madotzz<span>.dev</span></a>
+
+        <!-- Menu desktop -->
+        <ul class="navbar__menu--desktop">
+          <li><a href="#beranda">Beranda</a></li>
+          <li><a href="#proyek">Proyek</a></li>
+          <li><a href="#kontak" class="navbar__cta">Hubungi saya</a></li>
+        </ul>
+
+        <!-- Tombol burger (hanya tampil di HP) -->
+        <button
+          id="burger"
+          class="burger"
+          type="button"
+          aria-controls="menu-mobile"
+          aria-expanded="false"
+          aria-label="Buka menu"
+        >
+          <span class="burger__bar"></span>
+          <span class="burger__bar"></span>
+          <span class="burger__bar"></span>
+        </button>
+      </nav>
+
+      <!-- Menu mobile -->
+      <ul id="menu-mobile" class="navbar__menu--mobile" hidden>
+        <li><a href="#beranda">Beranda</a></li>
+        <li><a href="#proyek">Proyek</a></li>
+        <li><a href="#kontak">Hubungi saya</a></li>
+      </ul>
+    </header>
+
+    <main>
+      <!-- =====================================================
+         BAGIAN 1: HERO BANNER dengan tombol CTA
+         ===================================================== -->
+      <section id="beranda" class="hero">
+        <div class="container hero__inner">
+          <div>
+            <p class="hero__badge">Mahasiswa Teknik Informatika</p>
+            <h1 class="hero__title">
+              Saya membangun situs web yang nyaman dibuka di layar mana pun.
+            </h1>
+            <p class="hero__desc">
+              Halo, saya Rahmat Rahmadi. Saya belajar HTML, CSS, dan JavaScript
+              untuk membuat tampilan yang rapi dan mudah dipakai.
+            </p>
+            <div class="hero__actions">
+              <a href="#proyek" class="btn btn--sun">Lihat proyek saya</a>
+              <a href="#kontak" class="btn btn--outline">Kirim pesan</a>
+            </div>
+          </div>
+
+          <aside aria-label="Profil singkat">
+            <div class="profile-card">
+              <img
+                src="assets/img/profil/foto-profil.jpg"
+                alt="Foto profil Nama Kamu"
+                class="profile-card__photo"
+                width="400"
+                height="400"
+                
+              />
+              <p class="profile-card__name">Rahmat Rahmadi</p>
+              <p class="profile-card__place">Sulawesi Barat, Indonesia</p>
+              <dl class="profile-card__facts">
+                <div>
+                  <dt>Fokus</dt>
+                  <dd>Web Developer</dd>
+                </div>
+                <div>
+                  <dt>Semester</dt>
+                  <dd>7</dd>
+                </div>
+              </dl>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- =====================================================
+         BAGIAN 2: GRID KARTU PROYEK
+         ===================================================== -->
+      <section id="proyek" class="section">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="section__title">Proyek yang sudah saya kerjakan</h2>
+            <p class="section__desc">
+              Empat proyek dari tugas kuliah dan latihan mandiri.
+            </p>
+          </div>
+
+          <div class="project-grid">
+            <article class="card">
+              <img
+                src="assets/img/proyek/sipas.png"
+                alt="Screenshot proyek SIPAS"
+                class="card__image"
+                loading="lazy"
+              />
+              <div class="card__body">
+                <h3 class="card__title">SIPAS</h3>
+                <p class="card__text">Sistem Peminjaman Aset Desa.</p>
+                <ul class="tags">
+                  <li>HTML</li>
+                  <li>Laravel</li>
+                  <li>MySQL</li>
+                  <li>Tailwind CSS</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="card">
+              <img
+                src="assets/img/proyek/info-pesisir.png"
+                alt="Screenshot proyek Info Pesisir"
+                class="card__image"
+                loading="lazy"
+              />
+              <div class="card__body">
+                <h3 class="card__title">Info Pesisir</h3>
+                <p class="card__text">
+                  Website informasi tentang pesisir dan kebudayaan lokal.
+                </p>
+                <ul class="tags">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                </ul>
+              </div>
+            </article>
+
+            <!-- ASET SCREENSHOT PROYEK 3: assets/img/proyek/proyek-3-pelacak-pengeluaran.svg -->
+            <article class="card">
+              <img
+                src="assets/img/proyek/galonku.png"
+                alt="Screenshot proyek Galonku"
+                class="card__image"
+                loading="lazy"
+              />
+              <div class="card__body">
+                <h3 class="card__title">Galonku</h3>
+                <p class="card__text">Web platform pemesanan air galon .</p>
+                <ul class="tags">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                </ul>
+              </div>
+            </article>
+
+            <!-- ASET SCREENSHOT PROYEK 6: assets/img/proyek/proyek-6-blog-pribadi.svg -->
+            <article class="card">
+              <img
+                src="assets/img/proyek/blogger.png"
+                alt="Screenshot proyek Blog Pribadi"
+                class="card__image"
+                loading="lazy"
+              />
+              <div class="card__body">
+                <h3 class="card__title">Blog Pribadi</h3>
+                <p class="card__text">
+                  Blog statis berisi catatan belajar pemrograman.
+                </p>
+                <ul class="tags">
+                  <li>HTML</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================
+         BAGIAN 4: INTERAKTIVITAS MODAL (tombol pembuka)
+         ===================================================== -->
+      <section id="sertifikat" class="banner">
+        <div class="container banner__inner">
+          <div>
+            <h2 class="section__title">Sertifikat dan profil lengkap</h2>
+            <p class="banner__desc">
+              Lihat sertifikat kelas Pemrograman Web Responsif dan profil singkat saya.
+            </p>
+          </div>
+          <div class="banner__actions">
+            <button
+              type="button"
+              class="btn btn--sun"
+              data-modal-open="modal-sertifikat"
+            >
+              Lihat sertifikat
+            </button>
+            <button
+              type="button"
+              class="btn btn--outline"
+              data-modal-open="modal-profil"
+            >
+              Baca profil
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================
+         BAGIAN 3: FORM KONTAK dengan validasi
+         ===================================================== -->
+      <section id="kontak" class="section">
+        <div class="container contact">
+          <div>
+            <h2 class="section__title">Ada proyek atau pertanyaan?</h2>
+            <p class="section__desc">
+              Isi formulir ini. Saya akan membalas lewat email dalam beberapa
+              hari.
+            </p>
+          </div>
+
+          <form id="form-kontak" class="form" novalidate>
+            <div class="field">
+              <label for="nama" class="field__label">Nama</label>
+              <input
+                id="nama"
+                name="nama"
+                type="text"
+                class="field__input"
+                autocomplete="name"
+                aria-describedby="err-nama"
+              />
+              <p id="err-nama" class="field__error" role="alert" hidden></p>
+            </div>
+
+            <div class="field">
+              <label for="email" class="field__label">Email</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                class="field__input"
+                autocomplete="email"
+                aria-describedby="err-email"
+              />
+              <p id="err-email" class="field__error" role="alert" hidden></p>
+            </div>
+
+            <div class="field">
+              <label for="pesan" class="field__label">Pesan</label>
+              <textarea
+                id="pesan"
+                name="pesan"
+                rows="5"
+                class="field__input"
+                aria-describedby="err-pesan"
+              ></textarea>
+              <div class="field__foot">
+                <p id="err-pesan" class="field__error" role="alert" hidden></p>
+                <p id="hitung-pesan" class="field__counter">
+                  0 / 10 karakter minimum
+                </p>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn--brand">Kirim pesan</button>
+            <p id="sukses" class="form__success" role="status" hidden></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p>@2026 Rahmat Rahmadi. Dibuat dengan HTML, CSS, dan JavaScript.</p>
+        <a href="#beranda" class="footer__top">Kembali ke atas</a>
+      </div>
+    </footer>
+
+    <!-- =====================================================
+MODAL SERTIFIKAT (elemen <dialog> bawaan HTML)
+===================================================== -->
+    <dialog
+      id="modal-sertifikat"
+      class="modal"
+      aria-labelledby="judul-sertifikat"
+    >
+      <div class="modal__head">
+        <h2 id="judul-sertifikat" class="modal__title">
+          Sertifikat Pemrograman Web Responsif
+        </h2>
+        <button
+          type="button"
+          class="modal__close"
+          data-modal-close
+          aria-label="Tutup"
+        >
+          &times;
+        </button>
+      </div>
+      <div class="modal__body">
+        <!-- ASET SERTIFIKAT: assets/img/sertifikat/sertifikat-web-responsif.svg -->
+        <img
+          src="assets/img/sertifikat/sertifikat.png"
+          alt="Sertifikat kelulusan kelas Pemrograman Web Responsif"
+          class="modal__image"
+        />
+      </div>
+    </dialog>
+
+    <!-- =====================================================
+    MODAL PROFIL
+    ===================================================== -->
+    <dialog
+      id="modal-profil"
+      class="modal modal--small"
+      aria-labelledby="judul-profil"
+    >
+      <div class="modal__head">
+        <h2 id="judul-profil" class="modal__title">Tentang saya</h2>
+        <button
+          type="button"
+          class="modal__close"
+          data-modal-close
+          aria-label="Tutup"
+        >
+          &times;
+        </button>
+      </div>
+      <div class="modal__body">
+        <!-- ASET FOTO PROFIL: assets/img/profil/foto-profil.svg -->
+        <img
+          src="assets/img/profil/foto-profil.jpg"
+          alt="Foto profil Rahmat Rahmadi"
+          class="modal__photo"
+          width="112"
+          height="112"
+        />
+        <p>
+          Saya Rahmat Rahmadi, mahasiswa Teknik Informatika semester 7 di
+          Universitas Sulawesi Barat.
+        </p>
+        <p>
+          Saya tertarik pada pengembangan front-end: membuat antarmuka yang
+          jelas, cepat, dan nyaman dipakai di HP maupun laptop.
+        </p>
+        <p>
+          Saat ini saya belajar JavaScript modern dan membiasakan diri memakai
+          Git untuk setiap proyek.
+        </p>
+      </div>
+    </dialog>
+
+    <!-- ASET JAVASCRIPT: assets/js/main.js -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
